@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-path = "/home/khaled/Documents/python/Logistic regression/train.txt"
+path = "/home/khaled/Documents/python/Logostic Reggression/Logistic regression/train.txt"
 data = pd.read_csv(path , header=None , names=["Exam 1" , "Exam 2" , "Admitted"])
 # print(data.head(10))
 # print(f"\n {data.describe()}\n ")
@@ -73,7 +73,7 @@ def cost(thetav  , xv, yv):
     second = np.multiply((1-yv) , np.log(1-sigmaid(xv*thetav.T)))
     return np.sum(first - second) / len(xv)
 thiscost = cost(theta , x , y)
-# print(f"\n {thiscost} \n")
+print(f"\n {thiscost} \n")
 
 
 
